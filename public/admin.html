@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin – Voting Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th, td { border: 1px solid #ddd; padding: 8px; font-size: 14px; }
+    th { background: #f2f2f2; }
+    .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .small { font-size: 12px; color: #666; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Admin Results</h1>
+
+    <div class="controls">
+      <input id="adminKey" type="password" placeholder="Admin key" />
+      <button id="saveKey">Save key</button>
+      <button id="showRaw">Show Raw Votes</button>
+      <button id="showCounted">Show Counted Winners</button>
+      <span class="small">Key is stored in your browser only (localStorage).</span>
+    </div>
+
+    <div id="out" style="margin-top:16px;"></div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
+
